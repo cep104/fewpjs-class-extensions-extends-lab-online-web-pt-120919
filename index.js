@@ -1,6 +1,7 @@
 // Your code here
 class Polygon {
     constructor (array) {
+      
       this.sides = array.length;
       this.all = array;
     }
@@ -9,8 +10,11 @@ class Polygon {
       return this.sides;
     }
     get perimeter() {
+      debugger
       return this.all.reduce((acc, side) => {
         return acc + side;
+        // adds all the sides up 
+        // const reducer = (accumulator, currentValue)
       }, 0);
     }
   }
@@ -51,3 +55,4 @@ class Polygon {
         return this.all[0] ** 2;
       }
     }
+
